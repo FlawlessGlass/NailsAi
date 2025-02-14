@@ -1,5 +1,5 @@
-'use client'
-import { useState } from 'react'
+"use client"
+import { useState } from "react"
 
 export default function ImageUploader() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
@@ -13,9 +13,9 @@ export default function ImageUploader() {
   return (
     <div className="my-4">
       <h2 className="text-2xl font-semibold mb-2">Upload Your Image</h2>
-      <input 
-        type="file" 
-        accept="image/*" 
+      <input
+        type="file"
+        accept="image/*"
         onChange={handleFileChange}
         className="block w-full text-sm text-gray-500
           file:mr-4 file:py-2 file:px-4
@@ -29,3 +29,4 @@ export default function ImageUploader() {
     </div>
   )
 }
+
